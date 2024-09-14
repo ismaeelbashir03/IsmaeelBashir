@@ -3,27 +3,55 @@
 <html>
     <head>
         <title>Ismaeel Bashir</title>
+        <style>
+            button {
+                font-size: 12px;
+            }
+        </style>
     </head>
     <body>
-        <h1><b>Ismaeel Bashir</b></h1>
-        <h3>University of Edinburgh, Informatics (Minf)</h3>
-        
-        <p>
-            I don't like web development; I make other cool things that you can see on my <a href="https://www.github.com/ismaeelbashir03">Github</a>.
-        </p>
+        <header>
+            <h1><b>Ismaeel Bashir</b></h1>
+        </header>
 
-        
-        
-        <p>For more details, check my <a href="cv.pdf" download>CV</a>, <a href="https://www.linkedin.com/in/ismaeel-bashir">LinkedIn</a> and <a href="https://www.github.com/ismaeelbashir03">Github</a>.</p>
+        <section>
+            <h2>Bio</h2>
+            <p>Student at the University of Edinburgh studying an undergraduate Masters in Informatics.</p>
+            <p>Expecteed First class Honors (85%)</p>
+        </section>
 
-        <h4>Contact</h4>
-        <p>Email me: <a href="mailto:ismaeelbashir2003@gmail.com">ismaeelbashir2003@gmail.com</a></p>
+        <section>
+            <h2>About Me</h2>
+            <p>
+                Intrested in building large scale and low latency systems and data pipelines. I have experience with Java, Python, and C++.
+            </p>
+            <p>
+                I don't like web development; I make other cool things that you can see on my <a href="https://www.github.com/ismaeelbashir03">Github</a>.
+            </p>
+        </section>
 
-        <button onclick="sendEmail()">Send me an email!</button>
+        <section>
+            <h2>Links</h2>
+            <ul>
+                <li><a href="cv.pdf" download>CV</a></li>
+                <li><a href="https://www.linkedin.com/in/ismaeel-bashir">LinkedIn</a></li>
+                <li><a href="https://www.github.com/ismaeelbashir03">Github</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <p>Email me: <a href="mailto:ismaeelbashir2003@gmail.com">ismaeelbashir2003@gmail.com</a></p>
+            <button onclick="sendEmail()">Send me an email!</button>
+        </section>
+
+        <footer>
+            <p>&copy; 2023 Ismaeel Bashir</p>
+        </footer>
 
         <script>
             function sendEmail() {
-                window.location.href = "mailto:ismaeelbashir2003@gmail.com?subject=Congratulations&body=Congratulations Ismaeel, on recieving our internship offer! :)";
+                window.location.href = "mailto:ismaeelbashir2003@gmail.com?subject=Congratulations&body=Congratulations Ismaeel, on receiving our job offer! We are excited to have you on board. :)";
             }
         </script>
     </body>
