@@ -41,7 +41,7 @@
 
         <section>
             <h2>Contact</h2>
-            <p>Email me: <a href="mailto:ismaeelbashir2003@gmail.com">ismaeelbashir2003@gmail.com</a></p>
+            <p>Email me: <span id="email"></span></p>
             <button onclick="sendEmail()">Send me an email!</button>
         </section>
 
@@ -50,8 +50,20 @@
         </footer>
 
         <script>
+            // JavaScript to obfuscate email
+            document.addEventListener('DOMContentLoaded', function() {
+                var user = 'ismaeelbashir2003';
+                var domain = 'gmail.com';
+                var email = user + '@' + domain;
+                var emailLink = '<a href="mailto:' + email + '">' + email + '</a>';
+                document.getElementById('email').innerHTML = emailLink;
+            });
+
             function sendEmail() {
-                window.location.href = "mailto:ismaeelbashir2003@gmail.com?subject=Congratulations&body=Congratulations Ismaeel, on receiving our job offer! We are excited to have you on board. :)";
+                var user = 'ismaeelbashir2003';
+                var domain = 'gmail.com';
+                var email = user + '@' + domain;
+                window.location.href = 'mailto:' + email + '?subject=Congratulations&body=Congratulations Ismaeel, on receiving our job offer! We are excited to have you on board. :)';
             }
         </script>
     </body>
